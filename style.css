@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Green Header & Nav Area */
+header {
+  background-color: #27ae60;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* Simple Navigation inside Header */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #27ae60;
+}
+
+/* Container */
+.main-container {
+  max-width: 900px;
+  margin: -20px auto 40px auto; /* Card ko header ke thora upar lane ke liye */
+  padding: 0 20px;
+}
+
+/* Sections as Clean Cards */
+section {
+  background: white;
+  padding: 35px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #27ae60;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.contact-details p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+  font-size: 0.9rem;
+}
