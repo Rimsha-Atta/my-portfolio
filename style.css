@@ -179,36 +179,14 @@ a {
 /* Mobile aur Tablet ke liye Responsive Settings */
 @media (max-width: 768px) {
   header {
-    padding: 50px 15px; /* Mobile par header ki height kam kar di */
+    padding: 40px 15px !important;
   }
 
   header h1 {
-    font-size: 1.8rem; /* Name ka size thora chota kar diya */
+    font-size: 1.6rem !important;
   }
 
-  .profile-img {
-    width: 140px; /* Image choti kar di */
-    height: 140px;
-    margin-top: -70px; /* Overlap adjust kiya */
-  }
-
-  .container {
-    padding: 10px; /* Side spacing kam kar di */
-  }
-
-  section {
-    padding: 20px; /* Section ke andar ki space kam kar di */
-    margin-bottom: 20px;
-  }
-
-  .projects-grid {
-    display: flex;
-    flex-direction: column; /* Projects ko line mein dikhane ke liye */
-    gap: 20px;
-  }
-}
-/* Mobile menu styling */
-@media (max-width: 768px) {
+  /* Menu items ko ek line mein lane ke liye */
   nav ul {
     display: flex !important;
     flex-direction: row !important;
@@ -216,15 +194,20 @@ a {
     flex-wrap: wrap !important;
     gap: 15px !important;
     padding: 0 !important;
-    list-style: none !important;
   }
 
   nav ul li {
-    margin: 5px 0 !important;
+    display: inline-block !important;
+    margin: 5px !important;
   }
 
-  nav ul li a {
-    font-size: 14px !important;
-    text-decoration: none !important;
+  .profile-img {
+    width: 120px !important;
+    height: 120px !important;
+    margin-top: -60px !important;
+  }
+
+  .container {
+    padding: 0 15px !important;
   }
 }
