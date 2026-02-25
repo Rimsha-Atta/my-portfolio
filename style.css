@@ -5,7 +5,27 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8fafc;
-  color: #1e293b;
+  color: #1e293b; /* Mobile menu styling */
+  @media (max-width: 768px) {
+    nav ul {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: center !important;
+      flex-wrap: wrap !important;
+      gap: 15px !important;
+      padding: 0 !important;
+      list-style: none !important;
+    }
+
+    nav ul li {
+      margin: 5px 0 !important;
+    }
+
+    nav ul li a {
+      font-size: 14px !important;
+      text-decoration: none !important;
+    }
+  }
   scroll-behavior: smooth;
 }
 
@@ -166,11 +186,6 @@ a {
     font-size: 1.8rem; /* Name ka size thora chota kar diya */
   }
 
-  nav ul li {
-    display: block; /* Menu items ko ek ke upar ek lane ke liye */
-    margin: 10px 0;
-  }
-
   .profile-img {
     width: 140px; /* Image choti kar di */
     height: 140px;
@@ -190,5 +205,26 @@ a {
     display: flex;
     flex-direction: column; /* Projects ko line mein dikhane ke liye */
     gap: 20px;
+  }
+}
+/* Mobile menu styling */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  nav ul li {
+    margin: 5px 0 !important;
+  }
+
+  nav ul li a {
+    font-size: 14px !important;
+    text-decoration: none !important;
   }
 }
