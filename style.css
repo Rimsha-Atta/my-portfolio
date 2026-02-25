@@ -156,3 +156,39 @@ a {
 .contact-container p {
   margin: 15px 0;
 }
+/* Mobile aur Tablet ke liye Responsive Settings */
+@media (max-width: 768px) {
+  header {
+    padding: 50px 15px; /* Mobile par header ki height kam kar di */
+  }
+
+  header h1 {
+    font-size: 1.8rem; /* Name ka size thora chota kar diya */
+  }
+
+  nav ul li {
+    display: block; /* Menu items ko ek ke upar ek lane ke liye */
+    margin: 10px 0;
+  }
+
+  .profile-img {
+    width: 140px; /* Image choti kar di */
+    height: 140px;
+    margin-top: -70px; /* Overlap adjust kiya */
+  }
+
+  .container {
+    padding: 10px; /* Side spacing kam kar di */
+  }
+
+  section {
+    padding: 20px; /* Section ke andar ki space kam kar di */
+    margin-bottom: 20px;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column; /* Projects ko line mein dikhane ke liye */
+    gap: 20px;
+  }
+}
