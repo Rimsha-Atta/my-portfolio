@@ -1,52 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rimsha's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rimsha Atta Muhammad | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
+      <div class="header-content">
         <h1>Rimsha Atta Muhammad</h1>
-    
         <p>BS Computer Science Student | Aspiring Web Developer</p>
         <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-    <div class="main-container">
-        <img src="profile.jpg" alt="Rimsha Atta" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid #007bff; margin-bottom: 20px;">
-        
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a final-year BS Computer Science student at LEADS University, Lahore (CGPA 3.82) with a strong interest in web development. I am currently learning and improving my skills in HTML, CSS, and JavaScript, focusing on front-end technologies. I am passionate about building user-friendly websites and continuously expanding my knowledge of modern web development. My goal is to become a professional web developer and contribute to innovative web applications.</p>
-        </section>
+    <img src="profile.jpg" alt="Rimsha Atta" class="profile-img" />
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me via email or LinkedIn:</p>
-            <div class="contact-details">
-          <p><strong>Email:</strong> 
-   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rimshaatta853@gmail.com" target="_blank" class="contact-link">
-      Click here to email me
-   </a>
-</p>
-   </a><p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/rimsha-atta-muhammad" target="_blank">linkedin.com/in/rimsha-atta-muhammad</a></p>
-     </div>
-    </section>
-    </div>
-    <footer>
-        <p>&copy; 2026 Rimsha Atta Muhammad</p>
-    </footer>
-
-</body>
-        <script src="script.js"></script>
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a final-year BS Computer Science student at LEADS University, Lahore, maintaining a strong academic record with a **CGPA of 3.82**. My focus is on front-end development, where I enjoy turning complex problems into beautiful and intuitive interface designs. I am passionate about learning new technologies and continuously improving my skills to create impactful web experiences.I am eager to contribute my knowledge and enthusiasm to real-world projects, and I am excited about the opportunities that lie ahead in my web development journey.
+        </p>
+      </section>
  
+<section id="skills">
+        <h2>Exposure & Learning</h2>
+        <div class="skills-list">
+            <div class="skill-tag">HTML</div>
+            <div class="skill-tag">CSS</div>
+            <div class="skill-tag">JavaScript (Learning)</div>
+            <div class="skill-tag">Responsive Design</div>
+            <div class="skill-tag">GitHub Basics</div>
+        </div>
+    </section>
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+        
+        <div class="project-card">
+            <h3>Personal Portfolio</h3> 
+            <p>A professional digital resume designed to showcase my academic background and web development journey.</p>
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+            <a href="https://rimsha-atta.github.io/my-portfolio/" target="_blank" class="project-link">View Live</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Future Innovations</h3>
+            <p>Currently working on an interactive project to further enhance my JavaScript and problem-solving skills.</p>
+            <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Learning</span>
+            </div>
+            <a href="#" class="project-link disabled">Coming Soon</a>
+        </div>
+
+    </div>
+</section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:rimshaatta853@gmail.com">rimshaatta853@gmail.com</a>
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://linkedin.com/in/rimsha-atta-muhammad"
+              target="_blank"
+              >linkedin.com/in/rimsha-atta-muhammad</a
+            >
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 Rimsha Atta Muhammad | Developed with Focus and Code</p>
+    </footer>
+  </body>
 </html>
