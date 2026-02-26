@@ -1,34 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
+/* General Page Styling */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8fafc;
-  color: #1e293b; /* Mobile menu styling */
-  @media (max-width: 768px) {
-    nav ul {
-      display: flex !important;
-      flex-direction: row !important;
-      justify-content: center !important;
-      flex-wrap: wrap !important;
-      gap: 15px !important;
-      padding: 0 !important;
-      list-style: none !important;
-    }
-
-    nav ul li {
-      margin: 5px 0 !important;
-    }
-
-    nav ul li a {
-      font-size: 14px !important;
-      text-decoration: none !important;
-    }
-  }
+  color: #1e293b;
   scroll-behavior: smooth;
 }
 
+/* Header Section with Gradient Background */
 header {
   background: linear-gradient(135deg, #166534, #22c55e);
   color: white;
@@ -36,6 +18,7 @@ header {
   text-align: center;
 }
 
+/* Desktop Navigation Menu */
 nav ul {
   padding: 0;
   margin-top: 25px;
@@ -57,6 +40,7 @@ nav ul li a:hover {
   color: #fde047;
 }
 
+/* Profile Image Styling with Hover Effect */
 .profile-img {
   width: 170px;
   height: 170px;
@@ -79,6 +63,7 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+/* Content Section Layout */
 section {
   background: white;
   margin-bottom: 40px;
@@ -95,7 +80,7 @@ h2 {
   margin-bottom: 25px;
 }
 
-/* Updated Skills Styling */
+/* Skills Section Styling */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -104,8 +89,8 @@ h2 {
 }
 
 .skill-tag {
-  background-color: #f0fdf4; /* Light green background */
-  color: #166534; /* Dark green text */
+  background-color: #f0fdf4;
+  color: #166534;
   padding: 10px 20px;
   border-radius: 30px;
   font-weight: 600;
@@ -120,13 +105,13 @@ h2 {
   transform: translateY(-3px);
 }
 
-/* Project Link Button Styling */
+/* Project Buttons Styling */
 .project-link {
   display: inline-block;
   margin-top: 15px;
   padding: 8px 15px;
   background-color: #166534;
-  color: white !important; /* Button text color */
+  color: white !important;
   border-radius: 5px;
   text-decoration: none;
   font-size: 14px;
@@ -138,14 +123,10 @@ h2 {
   transform: scale(1.05);
 }
 
-/* Coming Soon Button Style */
+/* Style for Future/Disabled Projects */
 .project-link.disabled {
   background-color: #cbd5e1;
   cursor: not-allowed;
-}
-
-.project-link.disabled:hover {
-  transform: none;
 }
 
 .footer {
@@ -154,29 +135,24 @@ h2 {
   color: #64748b;
 }
 
-a {
-  color: #166534;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* Contact Section ko center karne ke liye */
+/* Contact Section Centering */
 #contact {
-  text-align: center; /* Heading ko center karega */
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Content (div) ko center karega */
+  align-items: center;
 }
 
 .contact-container {
-  text-align: left; /* Is se links wapis left-aligned rahen ge jo zyada professional lagta hai */
+  text-align: left;
   display: inline-block;
 }
 
-/* Links ki spacing behtar karne ke liye */
 .contact-container p {
   margin: 15px 0;
 }
-/* Mobile aur Tablet ke liye Responsive Settings */
+
+/* Responsive Settings for Mobile and Tablets */
 @media (max-width: 768px) {
   header {
     padding: 40px 15px !important;
@@ -186,7 +162,7 @@ a {
     font-size: 1.6rem !important;
   }
 
-  /* Menu items ko ek line mein lane ke liye */
+  /* Force navigation items into a horizontal row on mobile */
   nav ul {
     display: flex !important;
     flex-direction: row !important;
